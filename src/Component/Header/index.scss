@@ -1,0 +1,38 @@
+.page-head {
+    padding: 17px 24px;
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__image {
+        width: 33px;
+        height: 33px;
+        margin-right: 13px;
+    }
+
+    &__text-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    &__hello {
+        margin: 0;
+        font-size: 12px;
+        line-height: 14px;  
+        font-weight: 400;
+    }
+
+    &__username {
+        margin: 0;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 700;
+    }
+
+}
