@@ -2,20 +2,21 @@
     background-position: center -31px ;
     background-repeat: no-repeat; 
     background-size: cover;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     color: #FFFFFF;
+    // height: 100vh;
+    min-height: 785px;
 
     &__title {
         font-size: 52px;
         line-height: 51px;
         text-align: center;
         margin-top: 67px;
-        width: 328px;
-        height: 102px;
+        max-width: 811px;
+        width: 100%;
         margin-bottom: 0;
         font-weight: 900;
     }
@@ -55,9 +56,6 @@
 }
 
 .bottom-section {
-
-    height: 100vh;
-
     &__cosmonot-left-decoration-container {
         display: flex;
         flex-direction: row;
@@ -106,6 +104,7 @@
         flex-direction: row;
         justify-content: flex-start;
         width: 66%;
+        margin-bottom: 93px;
     }
 
     &__oval-decoration {
