@@ -3,6 +3,7 @@ import Bg from "../../Assets/BG.svg";
 import oval from "../../Assets/Oval.svg";
 import cosmonot from "../../Assets/cosmonot.png";
 import cosmonotLeft from "../../Assets/cosmonot-left.png";
+import CardTestimonial from "../CardTestimonial";
 
 function UpperContent() {
   return (
@@ -37,6 +38,14 @@ function UpperContent() {
         </p>
         <div className="bottom-section__oval-decoration-container">
           <img className="bottom-section__oval-decoration" src={oval} alt="" />
+        </div>
+      </div>
+      <div className="card-section">
+        <h2 className="card-section__text">Testimonial</h2>
+        <div className="card-section__card-container">
+          <CardTestimonial />
+          <CardTestimonial />
+          <CardTestimonial />
         </div>
       </div>
     </div>

@@ -1,5 +1,13 @@
+.upper-content {
+    // display: flex;
+    // flex-direction: column;
+    position: relative;
+    background-color: #EEBECE;
+    padding-bottom: 93px;
+}
+
 .top-section {
-    background-position: center -31px ;
+    background-position: center -54px ;
     background-repeat: no-repeat; 
     background-size: cover;
     display: flex;
@@ -8,7 +16,7 @@
     align-items: center;
     color: #FFFFFF;
     // height: 100vh;
-    min-height: 785px;
+    // min-height: 785px;
 
     &__title {
         font-size: 52px;
@@ -52,6 +60,14 @@
         color: #000000;
         position: absolute;
         top: 65%;
+
+        &::placeholder {
+            color: black;
+        }
+
+        &:focus {
+            outline: none;
+        }
     }
 }
 
@@ -104,7 +120,6 @@
         flex-direction: row;
         justify-content: flex-start;
         width: 66%;
-        margin-bottom: 93px;
     }
 
     &__oval-decoration {
@@ -112,4 +127,39 @@
         height: 89px;
     }
     
+}
+
+.card-section {
+    position: absolute;
+    bottom: -187px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    &__text {
+        padding-left: 32px;
+        text-align: left;
+        font-size: 32px;
+        line-height: 38px;
+        font-weight: 700;
+        color: #FFFFFF;
+        text-shadow: 0px 20px 30px rgba(249, 131, 171, 0.7);
+    }
+
+    &__card-container {
+        margin-top: 30px;
+        padding-left: 32px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
 }
