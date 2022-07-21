@@ -4,6 +4,8 @@ import oval from "../../Assets/Oval.svg";
 import cosmonot from "../../Assets/cosmonot.png";
 import cosmonotLeft from "../../Assets/cosmonot-left.png";
 import CardTestimonial from "../CardTestimonial";
+import arrowRight from "../../Assets/arrow-right.svg";
+import arrowLeft from "../../Assets/arrow-left.svg";
 
 function UpperContent() {
   return (
@@ -44,10 +46,27 @@ function UpperContent() {
       </div>
       <div className="card-section">
         <h2 className="card-section__text">Testimonial</h2>
-        <div className="card-section__card-container">
-          <CardTestimonial />
-          <CardTestimonial />
-          <CardTestimonial />
+        <div className="card-section__card-body">
+          <button className="card-section__button-prev">
+            <img
+              className="card-section__button-arrow"
+              src={arrowLeft}
+              alt=""
+            />
+          </button>
+          <div className="card-section__card-container">
+            <CardTestimonial />
+            <CardTestimonial />
+            <CardTestimonial />
+            <CardTestimonial />
+          </div>
+          <button className="card-section__button-next">
+            <img
+              className="card-section__button-arrow"
+              src={arrowRight}
+              alt=""
+            />
+          </button>
         </div>
       </div>
     </div>

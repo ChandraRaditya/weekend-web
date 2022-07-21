@@ -1,5 +1,6 @@
 .card-testimonial {
     min-width: 247px;
+    max-width: 247px;
     height: 140px;
     background: #FFFFFF;
     box-shadow: 0px -10px 20px rgba(249, 131, 171, 0.2);
@@ -8,7 +9,6 @@
     align-items: flex-start;
     padding: 20px;
     margin-right: 10px;
-    // scroll-snap-align: start;
 
     &:last-child {
         margin-right: 0;
