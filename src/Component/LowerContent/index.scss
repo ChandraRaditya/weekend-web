@@ -1,10 +1,21 @@
 .lower-content {
     background: #000000;
     padding-top: 162px;
-}
 
-.lower-content__section {
-    margin-bottom: 67px;
+    &__section {
+        margin-bottom: 67px;
+    }
+
+    &__bottom-part {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__image-decoration {
+        align-self: flex-start;
+        width: 253px;
+        height: 337px;
+    }
 }
 
 .text-section {
