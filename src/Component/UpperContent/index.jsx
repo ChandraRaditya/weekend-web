@@ -7,7 +7,11 @@ import CardTestimonial from "../CardTestimonial";
 import arrowRight from "../../Assets/arrow-right.svg";
 import arrowLeft from "../../Assets/arrow-left.svg";
 
-function UpperContent() {
+function UpperContent(props) {
+  const testiCard = props.dataTesti.map((val, id) => {
+    return <CardTestimonial key={id} user={val.by} text={val.testimony} />;
+  });
+
   return (
     <div className="upper-content">
       <div className="top-section" style={{ backgroundImage: `url(${Bg})` }}>
@@ -54,12 +58,7 @@ function UpperContent() {
               alt=""
             />
           </button>
-          <div className="card-section__card-container">
-            <CardTestimonial />
-            <CardTestimonial />
-            <CardTestimonial />
-            <CardTestimonial />
-          </div>
+          <div className="card-section__card-container">{testiCard}</div>
           <button className="card-section__button-next">
             <img
               className="card-section__button-arrow"

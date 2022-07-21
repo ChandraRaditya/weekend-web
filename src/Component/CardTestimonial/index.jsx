@@ -1,13 +1,10 @@
 import "./index.scss";
 
-function CardTestimonial() {
+function CardTestimonial(props) {
   return (
     <div className="card-testimonial">
-      <h3 className="card-testimonial__title">Blu Kicks</h3>
-      <p className="card-testimonial__text">
-        Places where you can leverage tools and software to free up time to
-        focus on growing the business.
-      </p>
+      <h3 className="card-testimonial__title">{props.user}</h3>
+      <p className="card-testimonial__text">{props.text}</p>
     </div>
   );
 }
