@@ -9,10 +9,12 @@ $primaryFont: 'Work Sans', sans-serif;
 }
 
 .App {
+  background-color: #0B24FB;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 main {
