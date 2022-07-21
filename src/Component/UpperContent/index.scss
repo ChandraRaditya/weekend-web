@@ -1,6 +1,4 @@
 .upper-content {
-    // display: flex;
-    // flex-direction: column;
     position: relative;
     background-color: #EEBECE;
     padding-bottom: 93px;
@@ -72,6 +70,7 @@
 }
 
 .bottom-section {
+
     &__cosmonot-left-decoration-container {
         display: flex;
         flex-direction: row;
@@ -84,10 +83,17 @@
         height: 158px;
     }
 
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
     &__text {
         margin: 0 auto;
         max-width: 619px;
-        padding: 0 32px;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;

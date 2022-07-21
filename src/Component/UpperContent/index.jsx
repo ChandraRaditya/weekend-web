@@ -28,14 +28,16 @@ function UpperContent() {
             alt=""
           />
         </div>
-        <p className="bottom-section__text">
-          <span className="bottom-section__text_blue">Definition</span>; a
-          practice or exercise to test or improve one's fitness for athletic
-          competition, ability, or performance to exhaust (something, such as a
-          mine) by working to devise, arrange, or achieve by resolving
-          difficulties. <br /> Merriam-Webster.com Dictionary. <br />
-          <span className="bottom-section__text_white">-weekend team</span>
-        </p>
+        <div className="bottom-section__text-container">
+          <p className="bottom-section__text">
+            <span className="bottom-section__text_blue">Definition</span>; a
+            practice or exercise to test or improve one's fitness for athletic
+            competition, ability, or performance to exhaust (something, such as
+            a mine) by working to devise, arrange, or achieve by resolving
+            difficulties. <br /> Merriam-Webster.com Dictionary. <br />
+            <span className="bottom-section__text_white">-weekend team</span>
+          </p>
+        </div>
         <div className="bottom-section__oval-decoration-container">
           <img className="bottom-section__oval-decoration" src={oval} alt="" />
         </div>
