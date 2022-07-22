@@ -18,8 +18,9 @@ function UpperContent(props) {
   });
 
   const settings = {
+    adaptiveHeight: true,
     variableWidth: true,
-    dots: true,
+    dots: false,
     infinite: false,
     speed: 500,
     slidesToShow: 1,
