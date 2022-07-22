@@ -11,7 +11,13 @@ export const getTestimonialData = async () => {
   }
 };
 
-export const getHelpData = async () => {
+export const getTipsData = async () => {
   try {
-  } catch (error) {}
+    const res = await axios.get(
+      "https://wknd-take-home-challenge-api.herokuapp.com/help-tips"
+    );
+    return res;
+  } catch (error) {
+    console.log(error);
+  }
 };

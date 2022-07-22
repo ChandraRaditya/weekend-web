@@ -1,7 +1,12 @@
 import "./index.scss";
 import cosmonotBottom from "../../Assets/cosmonot-bottom.png";
+import CardTips from "../CardTips";
 
-function LowerContent() {
+function LowerContent(props) {
+  const tipsCard = props.dataTips.map((val) => {
+    return <CardTips key={val.id} text={val.title} image={val.image} />;
+  });
+
   return (
     <div className="lower-content">
       <div className="lower-content__section text-section">
@@ -27,7 +32,7 @@ function LowerContent() {
         </div>
       </div>
       <div className="lower-content__section tips-section">
-        <div className="tips-section__container"></div>
+        <div className="tips-section__container">{tipsCard}</div>
       </div>
       <div className="lower-content__bottom-part">
         <div className="lower-content__section text-section">

@@ -46,3 +46,17 @@
         text-align: left;
     }
 }
+
+.tips-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &__container {
+        margin: 0 32px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 960px;
+    }
+}

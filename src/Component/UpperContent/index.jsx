@@ -12,7 +12,6 @@ import { useRef, useState } from "react";
 function UpperContent(props) {
   const slider = useRef(null);
   const [index, setIndex] = useState(0);
-  const [opacity, setOpacity] = useState(1);
 
   const testiCard = props.dataTesti.map((val, id) => {
     return <CardTestimonial key={id} user={val.by} text={val.testimony} />;
