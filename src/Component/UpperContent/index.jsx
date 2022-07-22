@@ -6,11 +6,28 @@ import cosmonotLeft from "../../Assets/cosmonot-left.png";
 import CardTestimonial from "../CardTestimonial";
 import arrowRight from "../../Assets/arrow-right.svg";
 import arrowLeft from "../../Assets/arrow-left.svg";
+import Slider from "react-slick";
+import { useRef, useState } from "react";
 
 function UpperContent(props) {
+  const slider = useRef(null);
+  const [index, setIndex] = useState(0);
+  const [opacity, setOpacity] = useState(1);
+
   const testiCard = props.dataTesti.map((val, id) => {
     return <CardTestimonial key={id} user={val.by} text={val.testimony} />;
   });
+
+  const settings = {
+    variableWidth: true,
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 2,
+    slidesPerRow: 1,
+    beforeChange: (current, next) => setIndex(next),
+  };
 
   return (
     <div className="upper-content">
@@ -51,15 +68,33 @@ function UpperContent(props) {
       <div className="card-section">
         <h2 className="card-section__text">Testimonial</h2>
         <div className="card-section__card-body">
-          <button className="card-section__button-prev">
+          <button
+            style={index === 0 ? { opacity: 0.5 } : { opacity: 1 }}
+            className="card-section__button-prev"
+            onClick={() => slider?.current?.slickPrev()}
+          >
             <img
               className="card-section__button-arrow"
               src={arrowLeft}
               alt=""
             />
           </button>
-          <div className="card-section__card-container">{testiCard}</div>
-          <button className="card-section__button-next">
+          <Slider
+            className="card-section__card-container"
+            ref={slider}
+            {...settings}
+          >
+            {testiCard}
+          </Slider>
+          <button
+            style={
+              index === props.dataTesti.length - 1
+                ? { opacity: 0.5 }
+                : { opacity: 1 }
+            }
+            className="card-section__button-next"
+            onClick={() => slider?.current?.slickNext()}
+          >
             <img
               className="card-section__button-arrow"
               src={arrowRight}
