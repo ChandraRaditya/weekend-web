@@ -1,5 +1,6 @@
 import "./index.scss";
 import cosmonotBottom from "../../Assets/cosmonot-bottom.png";
+import candy from "../../Assets/candy.svg";
 import CardTips from "../CardTips";
 
 function LowerContent(props) {
@@ -32,7 +33,12 @@ function LowerContent(props) {
         </div>
       </div>
       <div className="lower-content__section tips-section">
-        <div className="tips-section__container">{tipsCard}</div>
+        <div className="tips-section__container">
+          {tipsCard}
+          <div className="tips-section__decoration">
+            <img src={candy} alt="" />
+          </div>
+        </div>
       </div>
       <div className="lower-content__bottom-part">
         <div className="lower-content__section text-section">
