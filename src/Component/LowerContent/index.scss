@@ -44,6 +44,7 @@
         letter-spacing: -0.571429px;
         color: #FFFFFF;
         text-align: left;
+        font-weight: 400;
     }
 }
 
@@ -60,4 +61,33 @@
         width: 100%;
         max-width: 960px;
     }
+}
+
+@media screen and (min-width: 600px) {
+    
+}
+
+@media screen and (min-width: 992px) {
+  .text-section {
+
+    &__title {
+        text-align: center;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        letter-spacing: -0.642857px;
+    }
+  }
+
+  .tips-section {
+    margin-bottom: 127px;
+
+    &__container {
+        margin: 0;
+        flex-direction: row;
+    }
+  }
 }

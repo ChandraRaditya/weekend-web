@@ -34,13 +34,9 @@ function UpperContent(props) {
       <div className="top-section" style={{ backgroundImage: `url(${Bg})` }}>
         <h1 className="top-section__title">WEEKEND FROM HOME</h1>
         <p className="top-section__text">Stay active with little workout</p>
-        <div className="top-section__search-container">
+        <div className="top-section__button-container">
           <img className="top-section__cosmonot" src={cosmonot} alt="" />
-          <input
-            className="top-section__search"
-            placeholder="Let's Go"
-            type="text"
-          />
+          <button className="top-section__button">Let's Go</button>
         </div>
       </div>
       <div className="bottom-section">
