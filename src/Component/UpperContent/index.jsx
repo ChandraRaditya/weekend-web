@@ -11,6 +11,7 @@ import { useRef, useState } from "react";
 
 function UpperContent(props) {
   const slider = useRef(null);
+  const toContent = useRef(null);
   const [index, setIndex] = useState(0);
 
   const testiCard = props.dataTesti.map((val, id) => {
@@ -29,6 +30,12 @@ function UpperContent(props) {
     beforeChange: (current, next) => setIndex(next),
   };
 
+  const handleToContent = () => {
+    toContent.current.scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="upper-content">
       <div className="top-section" style={{ backgroundImage: `url(${Bg})` }}>
@@ -36,7 +43,9 @@ function UpperContent(props) {
         <p className="top-section__text">Stay active with little workout</p>
         <div className="top-section__button-container">
           <img className="top-section__cosmonot" src={cosmonot} alt="" />
-          <button className="top-section__button">Let's Go</button>
+          <button className="top-section__button" onClick={handleToContent}>
+            Let's Go
+          </button>
         </div>
       </div>
       <div className="bottom-section">
@@ -61,7 +70,7 @@ function UpperContent(props) {
           <img className="bottom-section__oval-decoration" src={oval} alt="" />
         </div>
       </div>
-      <div className="card-section">
+      <div className="card-section" ref={toContent}>
         <h2 className="card-section__text">Testimonial</h2>
         <div className="card-section__card-body">
           <button

@@ -4,6 +4,10 @@
 
     &__section {
         margin-bottom: 67px;
+
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
     }
 
     &__bottom-part {
@@ -24,9 +28,7 @@
     align-items: center;
     
     &__container {
-        margin-left: 32px;
-        margin-right: 32px;
-        max-width: 619px;
+        width: 311px;
     }
 
     &__title {
@@ -76,6 +78,11 @@
 @media screen and (min-width: 992px) {
   .text-section {
 
+    &__container {
+        width: 100%;
+        max-width: 619px;
+    }
+
     &__title {
         text-align: center;
     }
@@ -105,4 +112,17 @@
             display: block;
         }
       }
+}
+
+@media screen and (min-width: 1234px) {
+   .lower-content {
+        &__bottom-part {
+            position: relative;
+            margin-bottom: 148px;
+        }
+
+        &__image-decoration {
+            position: absolute;
+        }
+   }
 }

@@ -32,6 +32,11 @@ function LowerContent(props) {
           </p>
         </div>
       </div>
+      <div className="lower-content__section text-section">
+        <div className="text-section__container">
+          <h2 className="text-section__title">Help & Tips</h2>
+        </div>
+      </div>
       <div className="lower-content__section tips-section">
         <div className="tips-section__container">
           {tipsCard}
