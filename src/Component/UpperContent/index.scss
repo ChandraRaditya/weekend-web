@@ -26,6 +26,8 @@
     }
 
     &__text {
+        font-size: 16px;
+        line-height: 19px;
         margin-top: 20px;
         font-style: italic;
     }
@@ -243,6 +245,22 @@
 @media screen and (min-width: 1555px) {
     .top-section {
         min-height: 1000px;
+        
+        * {
+            transform: translateY(90px) scale(1.5);
+        }
+
+        &__title {
+            transform: translateY(90px) scale(1.5);
+        }
+
+        &__text {
+            transform: translateY(107px) scale(1.5);
+        }
+
+        &__button-container {
+            transform: translateY(133px) scale(1);
+        }
     }
 }
 
