@@ -239,3 +239,16 @@
         }
    }
 }
+
+@media screen and (min-width: 1555px) {
+    .top-section {
+        // min-height: 1000px;
+        min-height: 796px;
+    }
+}
+
+@media screen and (min-width: 1985px) {
+    .top-section {
+        // min-height: 1500px;
+    }
+}
